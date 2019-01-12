@@ -8,4 +8,4 @@ def count(a):
     return counti
 
 array = [1,5,2,8,9]
-print(count(array))
+print(count(array)) 
