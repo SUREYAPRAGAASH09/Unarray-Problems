@@ -10,4 +10,4 @@ def test_arrayretutn7():
     #act
     actual = find_min_element_in_an_array.find_smallest_value(values)
     #assert
-    assert excepted == actual
+    assert excepted == actual 
