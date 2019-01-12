@@ -9,23 +9,21 @@ def count(a):
 
     return counti
 
-def find_more_than_once(array):
+def find_more_than_once(array,search_elemnt):
     flag = False
     i = 0
     b = count(array)
+    counti = 0
     while (i!=b):
-        start = array[i]
-        j = i + 1
-        while (j!=b):
-            if (start == array[j]):
-                flag = True
-                break
-            j += 1
-        i+=1
+        if (array[i] == search_elemnt):
+            counti += 1
+        i += 1
+    if counti == 2:
+        flag = True
     return flag
 
         
     
-
-array = [7,9,1,2,4,56,3,34,23,45,56,20,41,22,3]
-print(find_more_than_once(array))
+search_elemnt = 2
+array = [7,9,1,2,4]
+print(find_more_than_once(array,search_elemnt))
