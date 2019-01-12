@@ -14,6 +14,9 @@ def find_element(array,search_element):
         if (array[index]==search_element):
             break
         index += 1
+    #lenght_of_array += 1
+    if index == lenght_of_array :
+        index = -1
     return index
 
 array = [1,5,7,9,0,3]
